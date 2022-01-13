@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+p{
+    font-family: 'Work Sans', sans-serif;
+}
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
+  margin-bottom:10px;
 }
 
 .titleHeader {
   display:flex;
   justify-content: center;
+}
+
+.header{
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+}
+.paragraphContainer{
+  width:40%;
 }

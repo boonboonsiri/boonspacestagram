@@ -1,38 +1,23 @@
 import './App.css';
-import Canvas from './components/canvas.js';
-import {useRef, useCallback} from 'react'
-import searchNasa from './components/searchNasa.js'
+
+import Canvases from './components/Canvases.js';
 
 function App() {
-  // API key: kQv670YToeq0SuZ39J2d1V9rMjqZkVsjwNeLkYHt
 
-  //const { canvases } = searchNasa();
-
-
-  var passObj = {
-    img: "https://images.unsplash.com/photo-1641966961473-5b083fd62fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-    title: "SATURN",
-    date: "January 21, 2001",
-    data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis, est ut posuere auctor, lacus nisi mollis sapien, vel ullamcorper purus ex eu enim. Etiam quis lorem consequat"
-
-  }
-
-  let canvases =[passObj,passObj,passObj,passObj,passObj,passObj,passObj,passObj,passObj,passObj]
+  //Brought to you by NASA's APOD API
 
   return (
     <div className="App">
-      <span className="titleHeader">
-        <h1 className>Spacestagram</h1>
-      </span>
+      <div className="header">
+        <span className="titleHeader">
+          <h1>Spacestagram</h1>
+        </span>
+        <div className="paragraphContainer">
+          <p>Brought to you by NASA's APOD API. Hover on images to like. :)</p>
+        </div>
+      </div>
       <span>
-        <Canvas obj={passObj}/>
-        <Canvas obj={passObj}/>
-
-        {canvases.map((passObj, i) => {
-
-          return <Canvas obj={passObj}/>;
-      })}
-
+        <Canvases/>
       </span>
     </div>
   );

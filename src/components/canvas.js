@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 
 import './canvas.css'
 
-//import IconButton from '@material-ui/core/IconButton';
-//import FavoriteRoundedIcon from '@material-ui/core/icons-material/FavoriteRounded';
 import { IconButton } from '@material-ui/core';
 import { FavoriteRounded } from '@material-ui/icons'
 
@@ -47,9 +45,5 @@ class Canvas extends Component {
     }  
 
 }
-
-/*Canvas.propTypes = {
-    obj: React.proptypes.object,
-} */
 
 export default Canvas;
